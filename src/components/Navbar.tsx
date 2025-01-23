@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Trophy className="h-8 w-8 text-purple-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">SheDrivesports</span>
+            <span className="ml-2 text-xl font-bold text-gray-900">SheDrivesSports</span>
           </div>
           
           {/* Desktop menu */}
