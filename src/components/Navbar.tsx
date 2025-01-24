@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { Menu, X, Trophy } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NavItem } from '../types';
 
 const navigation: NavItem[] = [
@@ -16,12 +16,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50">
+    <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <Trophy className="h-8 w-8 text-purple-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">SheDrivesSports</span>
+            <img 
+              src="/Original__1_-removebg-preview.png"
+              alt="SheDrivesSports Logo"
+              className="h-14 w-auto"
+            />
+            <span className="ml-3 text-lg font-bold text-gray-900">She Drives Sports</span>
           </div>
           
           {/* Desktop menu */}

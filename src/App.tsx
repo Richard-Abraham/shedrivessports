@@ -6,6 +6,7 @@ import Team from './components/Team';
 import GetInvolved from './components/GetInvolved';
 import Footer from './components/Footer';
 import About from './components/About';
+import Sponsors from './components/Sponsors';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Programs />
       <Impact />
       <Team />
+      <Sponsors />
       <GetInvolved />
       <Footer />
     </div>
