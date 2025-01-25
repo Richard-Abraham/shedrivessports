@@ -13,12 +13,13 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full py-20 md:py-0">
         <div className="flex flex-col justify-center min-h-screen pt-16">
           <h1 className="animate-fade-in-up text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6">
-            Empowering Women in
-            <span className="text-gold-500 block mt-2">Sports Leadership</span>
+            Training Africa's Next
+            <span className="text-gold-500 block mt-2">Sports Leaders</span>
           </h1>
           <p className="animate-fade-in-up delay-100 text-lg sm:text-xl text-gray-200 max-w-2xl mb-8">
-            Join a community of ambitious women breaking barriers in sports management,
-            coaching, and administration. Together, we're changing the game.
+            Join our mission to train  women in sports leadership . 
+            Together, we're fostering integrity, building networks, and transforming the 
+            African sports industry.
           </p>
           <div className="animate-fade-in-up delay-200 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <button className="group bg-gold-500 text-white px-6 sm:px-8 py-4 rounded-md hover:bg-gold-600 transition-all duration-300 flex items-center justify-center">

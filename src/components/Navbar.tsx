@@ -8,8 +8,7 @@ const navigation: NavItem[] = [
   { title: 'Programs', href: '#programs' },
   { title: 'Impact', href: '#impact' },
   { title: 'Team', href: '#team' },
-  { title: 'Get Involved', href: '#get-involved' },
-  { title: 'News & Events', href: '#news' }
+  { title: 'Get Involved', href: '#get-involved' }
 ];
 
 export default function Navbar() {

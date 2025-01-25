@@ -7,6 +7,7 @@ import GetInvolved from './components/GetInvolved';
 import Footer from './components/Footer';
 import About from './components/About';
 import Sponsors from './components/Sponsors';
+import Goals from './components/Goals';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Goals />
       <Programs />
       <Impact />
       <Team />

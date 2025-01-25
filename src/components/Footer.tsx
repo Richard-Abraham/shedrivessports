@@ -37,17 +37,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                <a href="mailto:contact@shedrives.org" className="hover:text-purple-400 transition-colors">
-                  contact@shedrives.org
+                <a href="mailto:info@shedrivesports.com" className="hover:text-purple-400 transition-colors">
+                  info@shedrivesports.com
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>(555) 123-4567</span>
+                <span>+254 700 000 000</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>123 Sports Avenue, NY 10001</span>
+                <span>Nairobi, Kenya</span>
               </li>
             </ul>
           </div>
