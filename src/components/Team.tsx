@@ -7,7 +7,7 @@ const teamMembers: TeamMember[] = [
     name: "Sarah Johnson",
     role: "Founder & CEO",
     bio: "Former professional athlete turned sports executive with 15+ years of experience in transforming sports organizations. Pioneer in creating inclusive leadership programs.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/WhatsApp Image 2025-01-27 at 3.04.20 PM.jpeg",
     socialLinks: {
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com"
