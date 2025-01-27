@@ -12,7 +12,7 @@ const stories: ImpactStory[] = [
   {
     title: "Leading from the Front",
     description: "Transformed a struggling sports organization into a profitable enterprise.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/AML06924.jpg",
     author: "Michelle Wong",
     role: "Athletic Director"
   },

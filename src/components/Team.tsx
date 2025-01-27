@@ -4,9 +4,9 @@ import { TeamMember } from '../types';
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Sarah Johnson",
+    name: "Cynthia Mumbo",
     role: "Founder & CEO",
-    bio: "Former professional athlete turned sports executive with 15+ years of experience in transforming sports organizations. Pioneer in creating inclusive leadership programs.",
+    bio: "Cynthia is a visionary leader transforming the African sports industry. As the Founder and CEO of Sports Connect Africa, she empowers stakeholders ranging trom local organizations to global giants like NBA Africa and FIFA.",
     image: "/images/WhatsApp Image 2025-01-27 at 3.04.20 PM.jpeg",
     socialLinks: {
       linkedin: "https://linkedin.com",
@@ -23,10 +23,10 @@ const teamMembers: TeamMember[] = [
     }
   },
   {
-    name: "Dr. Emily Chen",
-    role: "Head of Research & Development",
-    bio: "PhD in Sports Psychology with expertise in leadership development. Leading research initiatives on women's advancement in sports management.",
-    image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    name: "Wanjiku Mwenda",
+    role: "Project Lead",
+    bio: "Wanjiku Mwenda is a sports Media and events specialist with over 10 years of experience in the sports media industry. She is a member of the Strategic and performance commission of the National Olympic Committee of Kenya -NOC-K and a holder of a Masters Degree in sports management.",
+    image: "/images/IMG_166.JPG",
     socialLinks: {
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com"

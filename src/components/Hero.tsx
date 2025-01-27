@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="relative bg-gradient-to-br from-primary-900 via-primary-700 to-primary-900 min-h-screen">
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-primary-900/50">
         <img
-          src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          src="/images/AML06892-min.jpg"
           alt="Women in sports"
           className="w-full h-full object-cover opacity-30 animate-fade-in"
         />

@@ -33,7 +33,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gold-500 rounded-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/images/AML07117[1](1)-min.jpg"
                 alt="Confident African woman leader"
                 className="rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 w-full"
               />
