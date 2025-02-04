@@ -6,39 +6,37 @@ const teamMembers: TeamMember[] = [
   {
     name: "Cynthia Mumbo",
     role: "Founder & CEO",
-    bio: "Cynthia is a visionary leader transforming the African sports industry. As the Founder and CEO of Sports Connect Africa, she empowers stakeholders ranging trom local organizations to global giants like NBA Africa and FIFA.",
+    bio: "Cynthia is a visionary leader transforming the African sports industry. As the Founder and CEO of Sports Connect Africa, she empowersstakeholders ranging from local organizations to global giants like NBA Africa and FIFA. With extensive experience in sales, marketing, and sports management, Cynthia's influence spans the Kenya Basketball Federation, Hype Sports Innovation, and the National Olympic Committee of Kenya. A pioneer, she is the first African woman to win the prestigious Leaders in Sport Under 40 Award. Cynthia's dedication and strategic expertise make her an impactful change-maker, unlocking Africa's immense sporting potential.",
     image: "/images/WhatsApp Image 2025-01-27 at 3.04.20 PM.jpeg",
     socialLinks: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      linkedin: "https://www.linkedin.com/in/cynthia-mumbo?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDY64t90TS2CAyZmKW3oMHg%3D%3D"
     }
   },
   {
-    name: "Maria Rodriguez",
-    role: "Program Director",
-    bio: "Sports management expert with a passion for developing leadership programs. Has mentored over 200 women in their journey to sports leadership positions.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    name: "Dorcas Amakobe",
+    role: "Partnerships Director",
+    bio: "Dorcas Amakobe is a seasoned sports marketing and partnerships expert with over 10 years of experience in the sports industry. She has successfully built strategic partnerships with major sports organizations, driving growth and innovation. Dorcas' expertise lies in identifying market opportunities, negotiating contracts, and managing relationships with key stakeholders. Her experience spans across various sports, including football, basketball, and athletics, making her a valuable asset in the sports industry.",
+    image: "/images/WhatsApp Image 2025-02-04 at 11.43.00 AM.jpeg",
     socialLinks: {
-      linkedin: "https://linkedin.com"
+      linkedin: "https://www.linkedin.com/in/dorcas-amakobe-4a9b804a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPzBidfghQUWHyNBoUMN55w%3D%3D"
+    }
+  },
+  {
+    name: "Nyaboke Omambia",
+    role: "Project Lead",
+    bio: "Nyaboke Omambia is a dynamic communications and events specialist with extensive experience in strategic communications, stakeholder engagement, and event management. She has successfully led communications initiatives across diverse industries, enhancing brand visibility and fostering strong public relations. With expertise in crisis management, media relations, and social media strategy, she has consistently delivered impactful messaging and engagement. Nyaboke has orchestrated high-profile events, including international conferences and government engagements, ensuring seamless execution and positive outcomes. Her background in corporate communications, coupled with strategic planning and business analysis skills, makes her a valuable asset in driving organizational success.",
+    image: "/images/IMG_166.JPG",
+    socialLinks: {
+      linkedin: "http://www.linkedin.com/in/nyabokeomambia"
     }
   },
   {
     name: "Wanjiku Mwenda",
     role: "Project Lead",
-    bio: "Wanjiku Mwenda is a sports Media and events specialist with over 10 years of experience in the sports media industry. She is a member of the Strategic and performance commission of the National Olympic Committee of Kenya -NOC-K and a holder of a Masters Degree in sports management.",
-    image: "/images/IMG_166.JPG",
+    bio: "Wanjiku Mwenda is a sports Media and events specialist with over 10 years of experience in the sports media industry. Currently she's the project lead for the She Drives Sports program. She is a member of the Strategic and performance commission of the National Olympic Committee of Kenya NOC K and a holder of a Masters Degree in sports management. She is also a renowned sports events moderator and had been a media commission member for various editions of World Athletics related events. Previously she worked as a sports senior reporter and anchor at various media houses including K24TV. She also held the position of Organizing secretary for the Sports Journalists association of Kenya between 2018-2023",
+    image: "/images/AML07641[2](1) - Shiko.jpg",
     socialLinks: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
-    }
-  },
-  {
-    name: "Alexandra Foster",
-    role: "Partnerships Director",
-    bio: "Former sports marketing executive bringing 10+ years of experience in building strategic partnerships with major sports organizations.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    socialLinks: {
-      linkedin: "https://linkedin.com"
+      linkedin: "https://www.linkedin.com/in/wanjiku-mwenda-01112134?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXkpmMNuRS9iI%2FiOYMAtwTA%3D%3D"
     }
   }
 ];
