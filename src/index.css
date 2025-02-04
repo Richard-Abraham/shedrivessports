@@ -17,3 +17,60 @@ body {
 .animate-delay-200 {
   animation-delay: 200ms;
 }
+
+.blob-purple {
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: theme('colors.purple.600');
+  opacity: 0.3;
+  filter: blur(12px);
+  animation: blob-bounce 8s infinite ease;
+}
+
+.blob-gold {
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: theme('colors.gold.500');
+  opacity: 0.3;
+  filter: blur(12px);
+  animation: blob-bounce 8s infinite ease reverse;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-animation {
+  animation: modalFadeIn 0.3s ease-out;
+}

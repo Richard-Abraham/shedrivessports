@@ -1,6 +1,7 @@
-
-import { Linkedin, Twitter } from 'lucide-react';
-import { TeamMember } from '../types';
+import { useState } from 'react';
+import { Linkedin, Twitter, ArrowRight } from 'lucide-react';
+import TeamMemberModal from './TeamMemberModal';
+import type { TeamMember } from '../types';
 
 const teamMembers: TeamMember[] = [
   {
@@ -42,6 +43,13 @@ const teamMembers: TeamMember[] = [
 ];
 
 export default function Team() {
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+
+  const truncateBio = (bio: string) => {
+    const words = bio.split(' ').slice(0, 15).join(' ');
+    return words + (bio.split(' ').length > 15 ? '...' : '');
+  };
+
   return (
     <section id="team" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,52 +61,86 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-4 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="relative w-full h-[460px] rounded-xl overflow-hidden group"
             >
-              <div className="relative group">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-purple-600 bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300"></div>
+              {/* Animated blob background */}
+              <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-gold-500/30" />
+                <div className="blob-purple absolute z-0" />
+                <div className="blob-gold absolute z-0" />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-purple-600 font-medium mb-3">{member.role}</p>
-                <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
-                <div className="flex space-x-3">
-                  {member.socialLinks.linkedin && (
-                    <a
-                      href={member.socialLinks.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-purple-600 transition-colors"
+
+              {/* Card content */}
+              <div className="relative h-full z-10 bg-white/95 backdrop-blur-lg m-1 rounded-lg p-6 flex flex-col">
+                <div className="relative mb-4 flex-shrink-0">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-48 object-cover rounded-lg shadow-md group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg" />
+                </div>
+
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-purple-600 font-medium mb-3">{member.role}</p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {truncateBio(member.bio)}
+                  </p>
+                  
+                  <div className="mt-auto">
+                    <button 
+                      onClick={() => setSelectedMember(member)}
+                      className="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center group/button"
                     >
-                      <Linkedin className="h-5 w-5" />
-                    </a>
-                  )}
-                  {member.socialLinks.twitter && (
-                    <a
-                      href={member.socialLinks.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-purple-600 transition-colors"
-                    >
-                      <Twitter className="h-5 w-5" />
-                    </a>
-                  )}
+                      See more info
+                      <ArrowRight className="ml-1 h-4 w-4 group-hover/button:translate-x-1 transition-transform" />
+                    </button>
+                    
+                    <div className="mt-3 flex space-x-3">
+                      {member.socialLinks.linkedin && (
+                        <a
+                          href={member.socialLinks.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-purple-600 transition-colors"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <Linkedin className="h-5 w-5" />
+                        </a>
+                      )}
+                      {member.socialLinks.twitter && (
+                        <a
+                          href={member.socialLinks.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-purple-600 transition-colors"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <Twitter className="h-5 w-5" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Modal */}
+        {selectedMember && (
+          <TeamMemberModal
+            member={selectedMember}
+            onClose={() => setSelectedMember(null)}
+          />
+        )}
       </div>
     </section>
   );
