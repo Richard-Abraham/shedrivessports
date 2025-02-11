@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Contact() {
@@ -81,7 +80,8 @@ export default function Contact() {
                 <Phone className="h-6 w-6 text-purple-600 mt-1" />
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-900">Phone</p>
-                  <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+                  {/* Commented out phone number */}
+                  {/* <p className="text-sm text-gray-600">+1 (555) 123-4567</p> */}
                 </div>
               </div>
               <div className="flex items-start">

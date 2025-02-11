@@ -15,7 +15,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Dorcas Amakobe",
-    role: "Partnerships Director",
+    role: "Co-founder She Drives Sports",
     bio: "Dorcas Amakobe is a seasoned sports marketing and partnerships expert with over 10 years of experience in the sports industry. She has successfully built strategic partnerships with major sports organizations, driving growth and innovation. Dorcas' expertise lies in identifying market opportunities, negotiating contracts, and managing relationships with key stakeholders. Her experience spans across various sports, including football, basketball, and athletics, making her a valuable asset in the sports industry.",
     image: "/images/WhatsApp Image 2025-02-04 at 11.43.00 AM.jpeg",
     socialLinks: {
@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Nyaboke Omambia",
-    role: "Project Lead",
+    role: "Communications",
     bio: "Nyaboke Omambia is a dynamic communications and events specialist with extensive experience in strategic communications, stakeholder engagement, and event management. She has successfully led communications initiatives across diverse industries, enhancing brand visibility and fostering strong public relations. With expertise in crisis management, media relations, and social media strategy, she has consistently delivered impactful messaging and engagement. Nyaboke has orchestrated high-profile events, including international conferences and government engagements, ensuring seamless execution and positive outcomes. Her background in corporate communications, coupled with strategic planning and business analysis skills, makes her a valuable asset in driving organizational success.",
     image: "/images/IMG_166.JPG",
     socialLinks: {

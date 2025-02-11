@@ -1,4 +1,4 @@
-import {  Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from 'lucide-react';
+import {  Mail, MapPin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -35,15 +35,15 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
+             {/* <li className="flex items-center">
+                <Phone className="h-4 w-4 mr-2" />
+                {/* <span>+254 700 000 000</span> 
+              </li> */}
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
                 <a href="mailto:info@shedrivesports.com" className="hover:text-purple-400 transition-colors">
                   info@shedrivesports.com
                 </a>
-              </li>
-              <li className="flex items-center">
-                <Phone className="h-4 w-4 mr-2" />
-                <span>+254 700 000 000</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
@@ -56,14 +56,17 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-purple-400 transition-colors">
+              {/* <a href="#" className="hover:text-purple-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="#" className="hover:text-purple-400 transition-colors">
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
               <a href="#" className="hover:text-purple-400 transition-colors">
                 <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://www.instagram.com/shedrivessports?igsh=MXA1b2Zvb2I1d3h2bQ==" className="hover:text-purple-400 transition-colors">
+                Instagram
               </a>
             </div>
           </div>
