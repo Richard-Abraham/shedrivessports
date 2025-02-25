@@ -4,11 +4,64 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/Original__1_-removebg-preview.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Empowering women in African sports leadership" />
+    <meta name="description" content="Training Africa's Next Sports Leaders. Join our mission to train women in sports leadership." />
+    <meta name="keywords" content="sports leadership, women in sports, Africa, sports management, mentorship, leadership development" />
+    <meta name="author" content="She Drives Sports" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shedrives.sports/" />
+    <meta property="og:title" content="She Drives Sports" />
+    <meta property="og:description" content="Training Africa's Next Sports Leaders. Join our mission to train women in sports leadership." />
+    <meta property="og:image" content="/images/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shedrives.sports/" />
+    <meta property="twitter:title" content="She Drives Sports" />
+    <meta property="twitter:description" content="Training Africa's Next Sports Leaders. Join our mission to train women in sports leadership." />
+    <meta property="twitter:image" content="/images/og-image.jpg" />
+    
+    <!-- PWA support -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#6d28d9" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://shedrives.sports/" />
+    
+    <!-- Preconnect to important domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <title>She Drives Sports</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- No-JS fallback -->
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>We're sorry, but She Drives Sports requires JavaScript to function properly. Please enable JavaScript to continue.</p>
+      </div>
+    </noscript>
+    
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
   </body>
 </html>

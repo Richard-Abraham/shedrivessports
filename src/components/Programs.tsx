@@ -1,6 +1,7 @@
 import { Users, Award, BookOpen, Network } from 'lucide-react';
 import { Program } from '../types';
 import { useState } from 'react';
+import PageSEO from './PageSEO';
 
 const programs: Program[] = [
   {
@@ -54,6 +55,11 @@ export default function Programs() {
 
   return (
     <section id="programs" className="py-20 bg-gradient-to-br from-white to-primary-50">
+      <PageSEO 
+        title="Our Programs" 
+        description="Comprehensive programs designed to empower women in sports leadership roles through education, mentorship, and networking."
+        path="/#programs"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Programs</h2>

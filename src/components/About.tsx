@@ -1,6 +1,14 @@
+import PageSEO from './PageSEO';
+
 export default function About() {
   return (
     <section id="about" className="py-12 sm:py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900">
+      <PageSEO 
+        title="About Us" 
+        description="SheDrives is a groundbreaking program co-created by Moving The Goalposts (MTG) and Sports Connect Africa (SCA), rewriting the sports code for women's leadership in Africa."
+        path="/#about"
+        image="/images/AML07117[1](1)-min.jpg"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">About SheDrives</h2>

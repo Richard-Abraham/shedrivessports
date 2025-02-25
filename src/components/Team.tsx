@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Linkedin, Twitter, ArrowRight } from 'lucide-react';
 import TeamMemberModal from './TeamMemberModal';
 import type { TeamMember } from '../types';
+import PageSEO from './PageSEO';
 
 const teamMembers: TeamMember[] = [
   {
@@ -52,6 +53,12 @@ export default function Team() {
 
   return (
     <section id="team" className="py-20 bg-white">
+      <PageSEO 
+        title="Our Team" 
+        description="Meet the passionate individuals driving our mission to transform the landscape of women's leadership in sports."
+        path="/#team"
+        image="/images/WhatsApp Image 2025-01-27 at 3.04.20 PM.jpeg"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-purple-600 font-semibold tracking-wider uppercase text-sm">Our Leadership</span>

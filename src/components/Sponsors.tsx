@@ -1,4 +1,5 @@
 import { Building2 } from 'lucide-react';
+import PageSEO from './PageSEO';
 
 const sponsors = [
   {
@@ -15,7 +16,12 @@ const sponsors = [
 
 export default function Sponsors() {
   return (
-    <section className="py-20 bg-white">
+    <section id="sponsors" className="py-20 bg-gray-50">
+      <PageSEO 
+        title="Our Sponsors" 
+        description="Meet the organizations and partners supporting She Drives Sports in our mission to empower women in sports leadership across Africa."
+        path="/#sponsors"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Sponsors</h2>

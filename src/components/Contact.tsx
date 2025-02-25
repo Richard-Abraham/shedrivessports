@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import PageSEO from './PageSEO';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -87,6 +88,11 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
+      <PageSEO 
+        title="Contact Us" 
+        description="Have questions about She Drives Sports? Get in touch with our team. We'd love to hear from you and answer any questions you may have."
+        path="/#contact"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-purple-600 font-semibold tracking-wider uppercase text-sm">Get In Touch</span>
