@@ -54,7 +54,9 @@ export default function Team() {
     <section id="team" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
+          <span className="text-purple-600 font-semibold tracking-wider uppercase text-sm">Our Leadership</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Meet Our Team</h2>
+          <div className="w-20 h-1.5 bg-gold-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Meet the passionate individuals driving our mission to transform the landscape
             of women's leadership in sports.
@@ -62,35 +64,58 @@ export default function Team() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, index) => (
             <div
               key={member.name}
               className="relative w-full h-[460px] rounded-xl overflow-hidden group"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
-              {/* Animated blob background */}
-              <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 to-gold-500/30" />
-                <div className="blob-purple absolute z-0" />
-                <div className="blob-gold absolute z-0" />
-              </div>
-
+              {/* Card background with animated gradient */}
+              <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-600/5 to-gold-500/5 group-hover:from-purple-600/10 group-hover:to-gold-500/10 transition-all duration-500"></div>
+              
               {/* Card content */}
-              <div className="relative h-full z-10 bg-white/95 backdrop-blur-lg m-1 rounded-lg p-6 flex flex-col">
-                <div className="relative mb-4 flex-shrink-0">
+              <div className="relative h-full z-10 bg-white/95 backdrop-blur-lg m-1 rounded-lg p-6 flex flex-col shadow-sm group-hover:shadow-md transition-all duration-300">
+                <div className="relative mb-4 flex-shrink-0 overflow-hidden rounded-lg">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-48 object-cover rounded-lg shadow-md group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-cover rounded-lg shadow-md transition-all duration-500 group-hover:scale-105 group-hover:shadow-lg"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
+                  
+                  {/* Social links overlay */}
+                  <div className="absolute bottom-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    {member.socialLinks.linkedin && (
+                      <a
+                        href={member.socialLinks.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/90 p-2 rounded-full text-purple-600 hover:text-purple-700 hover:bg-white transition-colors"
+                        aria-label={`${member.name}'s LinkedIn`}
+                      >
+                        <Linkedin className="h-4 w-4" />
+                      </a>
+                    )}
+                    {member.socialLinks.twitter && (
+                      <a
+                        href={member.socialLinks.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/90 p-2 rounded-full text-purple-600 hover:text-purple-700 hover:bg-white transition-colors"
+                        aria-label={`${member.name}'s Twitter`}
+                      >
+                        <Twitter className="h-4 w-4" />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className="flex-1 flex flex-col">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-1 group-hover:text-purple-600 transition-colors duration-300">
                     {member.name}
                   </h3>
                   <p className="text-purple-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600 text-sm mb-4">
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                     {truncateBio(member.bio)}
                   </p>
                   
@@ -98,35 +123,11 @@ export default function Team() {
                     <button 
                       onClick={() => setSelectedMember(member)}
                       className="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center group/button"
+                      aria-label={`Learn more about ${member.name}`}
                     >
                       See more info
                       <ArrowRight className="ml-1 h-4 w-4 group-hover/button:translate-x-1 transition-transform" />
                     </button>
-                    
-                    <div className="mt-3 flex space-x-3">
-                      {member.socialLinks.linkedin && (
-                        <a
-                          href={member.socialLinks.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-purple-600 transition-colors"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <Linkedin className="h-5 w-5" />
-                        </a>
-                      )}
-                      {member.socialLinks.twitter && (
-                        <a
-                          href={member.socialLinks.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-purple-600 transition-colors"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <Twitter className="h-5 w-5" />
-                        </a>
-                      )}
-                    </div>
                   </div>
                 </div>
               </div>
